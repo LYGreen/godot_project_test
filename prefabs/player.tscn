@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://byxe35acspm03"]
 
 [ext_resource type="Texture2D" uid="uid://bft6xeo6biyuc" path="res://icon.svg" id="1_lv0mc"]
-[ext_resource type="Script" path="res://prefabs/player.gd" id="1_yyl5p"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_x7r3t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8vw8l"]
 size = Vector2(128, 128)
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_yyl5p")
+script = ExtResource("1_x7r3t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_lv0mc")
