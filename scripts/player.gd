@@ -23,7 +23,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_down") :
 		velocity.y += WALK_SPEED;
 		
-	move_and_slide();
+	move_and_slide()
 	
 	pass
 	
