@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://dejl5hqstg686"]
+[gd_scene load_steps=4 format=3 uid="uid://dejl5hqstg686"]
 
-[ext_resource type="Texture2D" uid="uid://bft6xeo6biyuc" path="res://icon.svg" id="1_s47ik"]
+[ext_resource type="PackedScene" uid="uid://byxe35acspm03" path="res://prefabs/player.tscn" id="1_8ec7f"]
+[ext_resource type="PackedScene" uid="uid://bv1kfayrtqt7b" path="res://prefabs/drop.tscn" id="2_a6n5b"]
+[ext_resource type="PackedScene" path="res://prefabs/enemy.tscn" id="2_bcxmg"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_s47ik")
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("1_8ec7f")]
+
+[node name="Enemy" parent="." instance=ExtResource("2_bcxmg")]
+position = Vector2(547, 77)
+
+[node name="Drop" parent="." instance=ExtResource("2_a6n5b")]
